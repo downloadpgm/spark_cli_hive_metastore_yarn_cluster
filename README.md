@@ -1,0 +1,2 @@
+# spark_cli_hive_metastore_yarn_cluster
+spark_cli_hive_metastore_yarn_cluster
