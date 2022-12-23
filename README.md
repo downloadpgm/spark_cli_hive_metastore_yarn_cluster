@@ -6,7 +6,7 @@ In this demo, a Spark container uses a Hadoop YARN cluster as a resource managem
 
 This Docker image contains Spark binaries prebuilt and uploaded in Docker Hub.
 
-It access a remote Hive metastore created in a MySQL Server for Spark catalog.
+Spark client access a remote Hive metastore created in a MySQL Server for Spark catalog.
 
 
 ## Start Swarm cluster
