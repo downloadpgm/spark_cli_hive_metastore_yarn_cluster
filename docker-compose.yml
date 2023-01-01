@@ -27,7 +27,7 @@ services:
       - MYSQL_PASSWORD=hive123
     volumes:
       - .:/root/staging
-      - db:/var/lib/mysqld
+      - db:/var/lib/mysql
       
 
 networks:
