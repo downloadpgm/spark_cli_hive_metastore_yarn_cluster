@@ -17,3 +17,9 @@ WORKDIR /root
 RUN echo "" >>.bashrc \
  && echo 'export HIVE_HOME=/usr/local/apache-hive-2.1.0-bin' >>.bashrc \
  && echo 'export PATH=$PATH:$HIVE_HOME/bin' >>.bashrc
+ 
+COPY run_hive.sh .
+
+RUN chmod +x run_hive.sh
+
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
