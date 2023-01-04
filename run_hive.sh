@@ -22,10 +22,9 @@ if [ -n "${HADOOP_HOST_MASTER}" ]; then
 
    sleep 30
    ssh-keyscan ${HADOOP_HOST_MASTER} >>~/.ssh/known_hosts
-   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/core-site.xml   ${HADOOP_CONF_DIR}/conf/core-site.xml
-   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/hadoop-env.sh   ${HADOOP_CONF_DIR}/conf/hadoop-env.sh
-   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/hdfs-site.xml   ${HADOOP_CONF_DIR}/conf/hdfs-site.xml
-   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/mapred-site.xml ${HADOOP_CONF_DIR}/conf/mapred-site.xml
-   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/yarn-site.xml   ${HADOOP_CONF_DIR}/conf/yarn-site.xml
+   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/core-site.xml   ${HADOOP_CONF_DIR}/core-site.xml
+   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/hadoop-env.sh   ${HADOOP_CONF_DIR}/hadoop-env.sh
+   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/hdfs-site.xml   ${HADOOP_CONF_DIR}/hdfs-site.xml
+   scp root@${HADOOP_HOST_MASTER}:${HADOOP_CONF_DIR}/mapred-site.xml ${HADOOP_CONF_DIR}/mapred-site.xml
 
 fi
