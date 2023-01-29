@@ -64,7 +64,7 @@ tar -xzf apache-hive-2.1.0-bin.tar.gz
 2. access mysql server node and run hive script to create metastore tables
 ```shell
 /root/staging/apache-hive-2.1.0-bin/scripts/metastore/upgrade/mysql
-mysql -uroot -p metastore < hive-schema-2.1.0.mysql.sql
+mysql -uroot -p metastore < hive-schema-1.2.0.mysql.sql
 Enter password:
 ```
 
@@ -85,7 +85,7 @@ $ docker container exec -it <spk_cli ID> bash
 
 3. start spark-shell installing mysql jar files
 ```shell
-$ spark-shell --packages mysql:mysql-connector-java:8.0.31 --master yarn 
+$ spark-shell --packages mysql:mysql-connector-java:5.1.49 --master yarn --num-executors 4
 2021-12-05 11:09:14 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).

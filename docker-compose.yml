@@ -16,7 +16,7 @@ services:
       - HADOOP_HOST_MASTER=hdpmst
 
   mysql:
-    image: mysql:8.0
+    image: mysql:5.7
     deploy:
       placement:
         constraints:
@@ -36,6 +36,6 @@ networks:
   mynet:
     external:
        name: mynet
-       
+
 volumes:
   db:

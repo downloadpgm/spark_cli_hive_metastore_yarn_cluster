@@ -11,7 +11,7 @@ ADD apache-hive-2.1.0-bin.tar.gz .
 WORKDIR /usr/local/apache-hive-2.1.0-bin
 COPY hive-env.sh conf/hive-env.sh
 COPY hive-site.xml conf/hive-site.xml
-COPY com.mysql_mysql-connector-j-8.0.31.jar lib/com.mysql_mysql-connector-j-8.0.31.jar
+COPY mysql_mysql-connector-java-5.1.49.jar lib/mysql_mysql-connector-java-5.1.49.jar
 
 WORKDIR /root
 RUN echo "" >>.bashrc \
