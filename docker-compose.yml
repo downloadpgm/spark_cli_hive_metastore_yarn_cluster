@@ -7,13 +7,6 @@ services:
       - mynet
     environment:
       - HADOOP_HOST_MASTER=hdpmst
-      
-  hive:
-    image: mkenjis/ubhive_img
-    networks:
-      - mynet
-    environment:
-      - HADOOP_HOST_MASTER=hdpmst
 
   mysql:
     image: mysql:5.7
